@@ -3,8 +3,8 @@
 var ApiService = angular.module('ApiService', []);
 ApiService.factory('ApiServiceOp', ['$http', function($http){
 
-    //var urlBase = 'http://52.77.30.40/MMAD/backend/backend/web/v1';
-    var urlBase = 'http://192.168.43.133/MMAD/backend/web/v1'
+   // var urlBase = 'http://52.77.30.40/MMAD/backend/backend/web/v1';
+   var urlBase = 'http://52.77.44.104/pranavproject/backend/web/v1'
 
     var ApiServiceOp = {};
 

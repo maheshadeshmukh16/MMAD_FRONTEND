@@ -13,7 +13,7 @@ html, body {
   width: 100%;
   position: fixed;
   background: url("../images/loader.gif")center center no-repeat rgba(0, 0, 0, 0.47);
-  z-index: 1031;
+  z-index: 1000;
     opacity: 0.6;
 }
 
@@ -31,7 +31,7 @@ html, body {
 	height:90px;
 }
 .border{
-    height:15px;
+    height:8px;
     background-color: #0088cc;
     border-radius: 5px 5px 5px 5px;
 }
@@ -96,11 +96,15 @@ img {
     
     display: table-cell;
     vertical-align: middle;
-    min-height:330px;
+    min-height: 350px;
+    max-height:330px;
     background-color: white;
-	border-radius:2px;
+	border-radius:3px;
 	box-shadow:0 3px 3px;
-	overflow:hidden;
+    background: rgba(211,211,211,0.4);
+    overflow:scroll;
+    overflow-x:hidden;
+	overflow-y:scroll;
 	
 }
 .input-group{
@@ -125,7 +129,7 @@ img {
 	background-color:#333;
 	opacity:0.7;
 }
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones
     @media only screen and (min-width : 480px) {
        display: table-cell;
   
@@ -204,6 +208,7 @@ border:1px solid blue;
 /*Customized Scroll Bar*/
 ::-webkit-scrollbar {
     width: 10px;
+    overflow-y: scroll;
 }
 
 ::-webkit-scrollbar-track {
@@ -215,7 +220,7 @@ border:1px solid blue;
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(255,0,0,0.7);
+    background: rgba(119,119,119,0.9);
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
@@ -341,3 +346,30 @@ border:1px solid blue;
   .form-btn:active{
     opacity: 0.9;
   }
+/*slide*/
+.slide-leave-setup {
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+}
+.slide-enter-setup {
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+}
+.slide-enter-setup {
+    position: absolute;
+    left: 1300px;
+}
+.slide-enter-start {
+    left: 0;
+}
+.slide-leave-setup {
+    position: absolute;
+    left: -1700px;
+}
+.slide-leave-start {
+    right: 0;
+}

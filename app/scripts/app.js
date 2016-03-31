@@ -6,15 +6,16 @@
  * Main module of the application.
  */
 var myApp=angular.module('MMADApp', [
-    //'ngAnimate',
     //'ngCookies',
     //'ngResource',
-    //'ngRoute',
-    //'ngSanitize',
     //'ngTouch',
+	'ngRoute',
+	'ngSanitize',
+	'ngAnimate',
     'ui.router',
     'ui.bootstrap',
-    'ApiService',
+    'ApiService'
+
 
 ]);
 
