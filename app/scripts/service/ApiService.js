@@ -103,7 +103,7 @@ ApiService.factory('ApiServiceOp', ['$http', function($http){
             method: 'POST',
             url: urlBase + '/getcommiteemembers',
             //data: data,
-            headers:{'Content-Type' : undefined }
+            headers:{'Content-Type' : 'application/x-www-form-urlencoded' }
 
         });
     };
@@ -114,11 +114,44 @@ ApiService.factory('ApiServiceOp', ['$http', function($http){
             url: urlBase + '/createfeedback',
             data: $.param(data),
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': undefined
             }
 
         })
     };
+
+    ApiServiceOp.getPublications = function(){
+        return $http({
+            method: 'POST',
+            url: urlBase + '/getpublications',
+            //data: data,
+            headers:{'Content-Type' : 'application/x-www-form-urlencoded' }
+
+        });
+    };
+
+    ApiServiceOp.getSponsors = function(){
+        return $http({
+            method: 'POST',
+            url: urlBase + '/getsponsors',
+            //data: data,
+            headers:{'Content-Type' : 'application/x-www-form-urlencoded' }
+
+        });
+    };
+
+    ApiServiceOp.getAllGalleryImages = function(){
+        return $http({
+            method: 'GET',
+            url: urlBase + '/getallgalleryimages',
+           // data: $.param(data),
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        });
+    };
+
+
     return ApiServiceOp;
 }
 ]);

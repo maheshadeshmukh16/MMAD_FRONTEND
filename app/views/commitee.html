@@ -1,22 +1,46 @@
 <div class="container">
     <div class="col-lg-12 parent">
         <div class="col-lg-11 col-sm-offset-1 middle_body">
-            <div class="row">
-            	<div class="col-lg-2" ng-repeat="data in commitee_details">
-            		<div class="profile_pic thumbnail">
-            			<img src="{{data.image_url}}" class="img-responsive">
-            		</div>
-            	</div>
-				<div class="col-lg-9" ng-repeat="data in commitee_details">
-					<div class="member_info">
-						<h4>{{data.name}}</h4>
-						<span style="font-size:15px;">{{data.mobile}}</span>
-						<p style="font-size:15px;">{{data.title}}</p>
-						<br>
-						<p style="font-size:17px;">{{data.desc}}</p>
-					</div>
-				</div>
-            </div>
-        </div>
-    </div>
-</div>
+			 <div class="row">
+
+				 <div class="col-sm-12 space">
+					 <div class = "col-sm-6 col-md-6" ng-repeat="data in commitee_details">
+						 <!--<a href = "#" class = "thumbnail">-->
+
+						 <div class="thumbnail">
+
+							 <div class="col-sm-12">
+								 <div class="form-group">
+									 <div class="col-sm-6 col-md-4">
+										 <img src="{{data.image_url}}">
+									 </div>
+									 <div class="col-sm-6 col-sm-offset-2">
+									 <h4 style="text-align: left;"> Name:<b> {{data.name}}</b></h4>
+
+									 <p style="font-size:15px;text-align: left"><b>Mobile:</b> {{data.mobile}}</p>
+									 <p style="font-size:17px;"><b>Title:</b> {{data.title}}</p>
+									 <span class="pull-left" style="font-size:15px;"><b>Description:</b> {{data.desc}}</span>
+
+
+								 </div>
+							 </div>
+
+								 <!--<div class="col-lg-12" ng-repeat="data in commitee_details">
+                                                 <div class="col-lg-2">
+                                                     <div class="profile_pic thumbnail">
+                                                         <img src="{{data.image_url}}" class="img-responsive">
+                                                     </div>
+                                                 </div>-
+                                                 <div class="col-lg-9">
+
+                                                         <h4>{{data.name}}</h4>
+                                                         <span style="font-size:15px;">{{data.mobile}}</span>
+                                                         <p style="font-size:15px;">{{data.title}}</p>
+                                                         <br>
+                                                         <p style="font-size:17px;">{{data.desc}}</p>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>-->

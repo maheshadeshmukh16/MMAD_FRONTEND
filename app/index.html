@@ -14,12 +14,17 @@
     <!-- Custom Fonts -->
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
-    <link href="styles/animate.css" rel="stylesheet" type="text/css">
+
+   <!-- <link href="styles/animate.css" rel="stylesheet" type="text/css">-->
+
     <div class="appLoader" data-loading>
     </div>
+
     <body ng-app="MMADApp">
+
     <div ui-view>
     </div>
+
     <script src="bower_components/jquery/dist/jquery.js">
     </script>
     <script src="bower_components/angular/angular.js">
@@ -62,14 +67,18 @@
     </script>
     <script src="scripts/Controller/GalleryCtrl.js">
     </script>
-    <script src="scripts/Controller/Feedback.js">
+    <script src="scripts/Controller/FeedbackCtrl.js">
     </script>
-    <script src="scripts/Controller/Commitee.js">
+    <script src="scripts/Controller/CommiteeCtrl.js">
+    </script>
+    <script src="scripts/Controller/PublicationCtrl.js">
+    </script>
+    <script src="scripts/Controller/SponsorCtrl.js">
     </script>
     <script>
         $('.nav a').click(function(){
             $('.navbar-collapse').collapse('hide');
-            
+
         });
     </script>
 

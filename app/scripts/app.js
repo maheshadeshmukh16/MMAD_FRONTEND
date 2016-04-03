@@ -46,7 +46,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
 		  views: {
 		  	'frontend_content@homepage': {
 				templateUrl: 'views/commitee.html',
-				//controller: ''
+				controller: 'CommiteeCtrl'
 			}
 		  }
 		})
@@ -76,7 +76,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
 		  views: {
 		  	'frontend_content@homepage': {
 				templateUrl: 'views/sponsers.html',
-				//controller: ''
+				controller: 'SponsorCtrl'
 			}
 		  }
 		})
@@ -86,7 +86,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
 		  views: {
 		  	'frontend_content@homepage': {
 				templateUrl: 'views/publications.html',
-				//controller: ''
+				controller: 'PublicationCtrl'
 			}
 		  }
 		})

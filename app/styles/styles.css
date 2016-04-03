@@ -96,7 +96,7 @@ img {
     
     display: table-cell;
     vertical-align: middle;
-    min-height: 350px;
+    min-height: 340px;
     max-height:330px;
     background-color: white;
 	border-radius:3px;
@@ -204,7 +204,9 @@ border:1px solid blue;
 .main_blog{
     min-height: 330px;
 }
-
+.event{
+    height:15px;
+}
 /*Customized Scroll Bar*/
 ::-webkit-scrollbar {
     width: 10px;
