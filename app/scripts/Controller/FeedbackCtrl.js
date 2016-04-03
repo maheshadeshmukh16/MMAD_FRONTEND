@@ -16,7 +16,7 @@ angular.module('MMADApp')
                 .success(function (response) {
 
                     swal("Good job!", "Your valuable feedback is submited!", "success");
-                    
+
                 }).error(function () {
                 //console.log("wrong");
                 swal("Oops!", "Reenter the feedback", "error");
