@@ -10,19 +10,16 @@
 angular.module('MMADApp')
     .controller('FeedbackCtrl',['$rootScope','$scope','$http','$location','ApiServiceOp','$state', function ($rootScope,$scope,$http,$location,ApiServiceOp,$state) {
 
+        $scope.addFeedback = function(data) {
 
-        ApiServiceOp.addfeedback()
-            .success(function(response){
+            ApiServiceOp.addfeedback(data)
+                .success(function (response) {
 
-            console.log(response);
-            $scope.feedback_details = response;
-
-            console.log($scope.feedback_details);
-        }).error(function(){
-            console.log("wrong");
-            //swal("Oops!", "RElogin", "error");
-        });
-
-
-
+                    swal("Good job!", "Your valuable feedback is submited!", "success");
+                    
+                }).error(function () {
+                //console.log("wrong");
+                swal("Oops!", "Reenter the feedback", "error");
+            });
+        }
     }]);

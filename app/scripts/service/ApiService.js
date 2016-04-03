@@ -3,8 +3,8 @@
 var ApiService = angular.module('ApiService', []);
 ApiService.factory('ApiServiceOp', ['$http', function($http){
 
-   // var urlBase = 'http://52.77.30.40/MMAD/backend/backend/web/v1';
-   var urlBase = 'http://52.77.44.104/pranavproject/backend/web/v1'
+    // var urlBase = 'http://52.77.30.40/MMAD/backend/backend/web/v1';
+    var urlBase = 'http://52.77.44.104/pranavproject/backend/web/v1'
 
     var ApiServiceOp = {};
 
@@ -113,10 +113,7 @@ ApiService.factory('ApiServiceOp', ['$http', function($http){
             method: 'POST',
             url: urlBase + '/createfeedback',
             data: $.param(data),
-            headers: {
-                'Content-Type': undefined
-            }
-
+            headers:{'Content-Type' : 'application/x-www-form-urlencoded' }
         })
     };
 
@@ -144,7 +141,7 @@ ApiService.factory('ApiServiceOp', ['$http', function($http){
         return $http({
             method: 'GET',
             url: urlBase + '/getallgalleryimages',
-           // data: $.param(data),
+            // data: $.param(data),
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             }
